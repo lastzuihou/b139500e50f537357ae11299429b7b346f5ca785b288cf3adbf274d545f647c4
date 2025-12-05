@@ -1,0 +1,22 @@
+name: lastzuihou
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '32 0/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: lastzuihou
+        env:
+          wawx01: ${{ secrets.wawx01 }}
+        run: |
+          echo $wawx01 | jq -r .c9025 | /bin/bash
+          echo $kjeve35 | jq -r .m9 | /bin/bash
+          echo $iorxx3 | jq -r .jd5205 | /bin/bash
+          echo $r9 | jq -r .qvw09 | /bin/bash
+          echo $ea44 | jq -r .p36 | /bin/bash
+          echo $xwwu98 | jq -r .qav470 | /bin/bash
+
